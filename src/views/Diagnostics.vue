@@ -17,8 +17,8 @@
   <!-- PrimeVue Dialog Modal -->
   <Dialog v-model:visible="modalVisible" :header="modalHeader" :modal="true" :closable="false" :style="{ width: '500px' }">
     <div class="modal-content">
-      <i :class="modalIconClass" :style="{ fontSize: '3rem', color: modalIconColor, marginBottom: '1rem' }"></i>
-      <p style="font-size: 1.2rem; margin: 0 0 1rem 0;">{{ modalMessage }}</p>
+      <i :class="modalIconClass" :style="{ fontSize: 'var(--font-size-3xl)', color: modalIconColor, marginBottom: '1rem' }"></i>
+      <p style="font-size: var(--font-size-lg); margin: 0 0 1rem 0;">{{ modalMessage }}</p>
       <div v-if="modalDetails" class="modal-details">
         <pre>{{ modalDetails }}</pre>
       </div>
@@ -170,7 +170,7 @@ const closeModal = () => {
 
 .modal-details pre {
     margin: 0;
-    font-size: 0.85rem;
+    font-size: var(--font-size-sm);
     white-space: pre-wrap;
     word-wrap: break-word;
 }

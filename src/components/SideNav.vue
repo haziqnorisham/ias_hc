@@ -81,7 +81,7 @@ const navigate = (to) => {
 <style scoped>
 .sidenav {
   font-family: "Space Grotesk", sans-serif;
-    font-size: 14px;
+    font-size: var(--font-size-md);
     height: 100%;
     width: 16rem;
     position: fixed;
@@ -177,17 +177,17 @@ const navigate = (to) => {
 
 .profile-name {
     color: #e0e0e0;
-    font-size: 0.85rem;
+    font-size: var(--font-size-sm);
     font-weight: 500;
 }
 
 .profile-role {
     color: #888;
-    font-size: 0.75rem;
+    font-size: var(--font-size-xs);
 }
 
 .profile-arrow {
-    font-size: 0.75rem;
+    font-size: var(--font-size-xs);
     color: #888;
     margin-left: auto;
 }
@@ -198,7 +198,7 @@ const navigate = (to) => {
     background: rgba(240, 173, 78, 0.85);
     color: #18181B;
     text-align: center;
-    font-size: 0.95rem;
+    font-size: var(--font-size-md);
     font-weight: 700;
     padding: 14px 0;
     letter-spacing: 1px;

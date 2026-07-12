@@ -256,7 +256,7 @@ const activeTab = ref(0)
   border: none;
   color: #888;
   padding: 0.6rem 1.25rem;
-  font-size: 0.9rem;
+  font-size: var(--font-size-md);
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -278,7 +278,7 @@ const activeTab = ref(0)
 .tab-count {
   background: #2a2a2e;
   color: #888;
-  font-size: 0.7rem;
+  font-size: var(--font-size-xs);
   padding: 1px 6px;
   border-radius: 8px;
 }
@@ -305,13 +305,13 @@ const activeTab = ref(0)
 }
 
 .empty-icon {
-  font-size: 3rem;
+  font-size: var(--font-size-3xl);
   margin-bottom: 0.75rem;
   color: #444;
 }
 
 .rtsp-url {
-  font-size: 0.75rem;
+  font-size: var(--font-size-xs);
   color: #64b5f6;
   background: #18181B;
   padding: 1px 6px;

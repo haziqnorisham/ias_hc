@@ -90,7 +90,7 @@ const emit = defineEmits(['edit', 'view'])
 }
 
 .detail-row {
-  font-size: 0.8rem;
+  font-size: var(--font-size-sm);
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 18ch;
@@ -108,13 +108,13 @@ const emit = defineEmits(['edit', 'view'])
 
 .italic {
   font-style: italic;
-  font-size: 0.8rem;
+  font-size: var(--font-size-sm);
 }
 
 .bold {
   margin-top: 0.25rem;
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: var(--font-size-xl);
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 11ch;
@@ -131,7 +131,7 @@ const emit = defineEmits(['edit', 'view'])
 }
 
 .stream-ip {
-  font-size: 0.75rem;
+  font-size: var(--font-size-xs);
   color: #888;
   margin-top: 0.25rem;
 }
@@ -157,7 +157,7 @@ const emit = defineEmits(['edit', 'view'])
   align-items: center;
   justify-content: center;
   transition: all 0.15s;
-  font-size: 1rem;
+  font-size: var(--font-size-md);
 }
 
 .action-btn:hover {
@@ -174,7 +174,7 @@ const emit = defineEmits(['edit', 'view'])
 }
 
 .chip-live {
-  font-size: 0.75rem;
+  font-size: var(--font-size-xs);
   margin-top: 0.5rem;
   background-color: #2d5a4e;
   box-shadow: 0 0 8px rgba(72, 137, 123, 0.45);
@@ -185,7 +185,7 @@ const emit = defineEmits(['edit', 'view'])
 }
 
 .chip-stream {
-  font-size: 0.75rem;
+  font-size: var(--font-size-xs);
   margin-top: 0.5rem;
 }
 
@@ -222,7 +222,7 @@ const emit = defineEmits(['edit', 'view'])
 }
 
 .chip-inactive {
-  font-size: 0.75rem;
+  font-size: var(--font-size-xs);
   margin-top: 0.5rem;
   background-color: #3a3a3e;
 }

@@ -137,7 +137,7 @@ onBeforeUnmount(() => {
   left: 12px;
   background: rgba(0, 0, 0, 0.6);
   color: #ccc;
-  font-size: 0.7rem;
+  font-size: var(--font-size-xs);
   padding: 2px 8px;
   border-radius: 4px;
   pointer-events: none;
@@ -149,13 +149,13 @@ onBeforeUnmount(() => {
   align-items: center;
   gap: 0.5rem;
   color: #555;
-  font-size: 0.9rem;
+  font-size: var(--font-size-md);
   text-align: center;
   padding: 1rem;
 }
 
 .state-icon {
-  font-size: 2.5rem;
+  font-size: var(--font-size-2xl);
   color: #444;
 }
 
@@ -164,13 +164,13 @@ onBeforeUnmount(() => {
 }
 
 .state-hint {
-  font-size: 0.75rem;
+  font-size: var(--font-size-xs);
   color: #444;
 }
 
 .state-link {
   color: #64b5f6;
-  font-size: 0.8rem;
+  font-size: var(--font-size-sm);
   cursor: pointer;
   display: flex;
   align-items: center;

@@ -290,7 +290,7 @@ function hlsUrl() {
 
 .stream-name {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: var(--font-size-xl);
   font-weight: 700;
 }
 
@@ -299,7 +299,7 @@ function hlsUrl() {
   align-items: center;
   gap: 0.75rem;
   color: #888;
-  font-size: 0.85rem;
+  font-size: var(--font-size-sm);
   margin-top: 0.25rem;
 }
 
@@ -314,7 +314,7 @@ function hlsUrl() {
   padding: 0.75rem 1rem;
   border-radius: 0 8px 8px 0;
   color: #aaa;
-  font-size: 0.85rem;
+  font-size: var(--font-size-sm);
   margin-bottom: 1.5rem;
 }
 
@@ -331,7 +331,7 @@ function hlsUrl() {
 
 .section-header h3 {
   margin: 0;
-  font-size: 1rem;
+  font-size: var(--font-size-md);
   color: #ccc;
 }
 
@@ -346,7 +346,7 @@ function hlsUrl() {
   align-items: center;
   gap: 0.5rem;
   color: #666;
-  font-size: 0.85rem;
+  font-size: var(--font-size-sm);
   padding: 1.5rem;
   background: #18181B;
   border-radius: 8px;
@@ -373,7 +373,7 @@ function hlsUrl() {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 0.8rem;
+  font-size: var(--font-size-sm);
 }
 
 .info-label {
@@ -383,7 +383,7 @@ function hlsUrl() {
 
 .info-row code {
   color: #e0e0e0;
-  font-size: 0.8rem;
+  font-size: var(--font-size-sm);
 }
 
 .rtsp-url {
@@ -399,7 +399,7 @@ function hlsUrl() {
 }
 
 .chip-live {
-  font-size: 0.7rem;
+  font-size: var(--font-size-xs);
   background-color: #2d5a4e;
 }
 
@@ -408,7 +408,7 @@ function hlsUrl() {
 }
 
 .stream-status-chip {
-  font-size: 0.8rem;
+  font-size: var(--font-size-sm);
 }
 
 .empty-state {

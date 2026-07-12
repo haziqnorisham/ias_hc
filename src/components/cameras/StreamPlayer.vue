@@ -85,10 +85,10 @@ watch(() => props.hlsUrl, (newUrl) => {
   align-items: center;
   gap: 0.5rem;
   color: #555;
-  font-size: 1rem;
+  font-size: var(--font-size-md);
 }
 
 .player-placeholder i {
-  font-size: 3rem;
+  font-size: var(--font-size-3xl);
 }
 </style>

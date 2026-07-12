@@ -119,7 +119,7 @@ onMounted(async () => {
   align-items: center;
   justify-content: center;
   height: 100%;
-  font-size: 1.5rem;
+  font-size: var(--font-size-xl);
   font-weight: 600;
   color: #ccc;
   letter-spacing: 0.05em;

@@ -239,7 +239,7 @@ onUnmounted(() => {
 }
 
 .empty-icon {
-  font-size: 3rem;
+  font-size: var(--font-size-3xl);
   margin-bottom: 0.75rem;
   color: #444;
 }

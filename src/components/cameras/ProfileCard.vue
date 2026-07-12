@@ -75,12 +75,11 @@ const emit = defineEmits(['select'])
 
 .profile-name {
   font-weight: 600;
-  font-size: 1rem;
+  font-size: var(--font-size-md);
 }
 
 .profile-badge {
-  font-size: 0.65rem;
-  background: #2d5a4e;
+  font-size: var(--font-size-2xs);
   color: #4cff88;
   padding: 2px 8px;
   border-radius: 10px;
@@ -101,17 +100,17 @@ const emit = defineEmits(['select'])
 }
 
 .profile-label {
-  font-size: 0.75rem;
+  font-size: var(--font-size-xs);
   color: #888;
 }
 
 .profile-value {
-  font-size: 0.8rem;
+  font-size: var(--font-size-sm);
   color: #e0e0e0;
 }
 
 .profile-token {
-  font-size: 0.75rem;
+  font-size: var(--font-size-xs);
   color: #64b5f6;
   background: #18181B;
   padding: 1px 6px;
@@ -132,7 +131,7 @@ const emit = defineEmits(['select'])
   border-radius: 6px;
   color: #e0e0e0;
   cursor: pointer;
-  font-size: 0.8rem;
+  font-size: var(--font-size-sm);
   transition: all 0.15s;
 }
 

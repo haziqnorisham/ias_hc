@@ -125,7 +125,7 @@ function close() {
 }
 
 .field label {
-  font-size: 0.8rem;
+  font-size: var(--font-size-sm);
   color: #aaa;
 }
 
