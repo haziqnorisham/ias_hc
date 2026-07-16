@@ -7,11 +7,6 @@
         <Button label="Run Test" icon="pi pi-play" class="btn" @click="runBackendLinkTest"/>
       </div>
     </Panel>
-    <Panel title="ONVIF Media Server Test" subtitle="Verify connectivity to the IAS Media Server (port 8080).">
-      <div class="centered">
-        <Button label="Run Test" icon="pi pi-play" class="btn" @click="runOnvifTest"/>
-      </div>
-    </Panel>
   </div>
 
   <!-- PrimeVue Dialog Modal -->
@@ -38,7 +33,6 @@ import BlockUI from 'primevue/blockui'
 import ProgressSpinner from 'primevue/progressspinner'
 
 import { testApi } from '@/api/posts'
-import { getMediaHealth } from '@/api/media'
 
 // Page blocking state
 const loading = ref(false)
@@ -98,38 +92,6 @@ async function runBackendLinkTest() {
       'Backend Link Test', 
       false, 
       `Error: ${error.message || 'Failed to connect to backend'}`, 
-      error.stack || JSON.stringify(error, null, 2)
-    )
-  } finally {
-    loading.value = false
-  }
-}
-
-async function runOnvifTest() {
-  loading.value = true
-  try {
-    const response = await getMediaHealth()
-    if (response.status === 'healthy') {
-      showTestModal(
-        'ONVIF Media Server',
-        true,
-        'Media server is healthy and reachable.',
-        JSON.stringify(response, null, 2)
-      )
-    } else {
-      showTestModal(
-        'ONVIF Media Server',
-        false,
-        `Media server reports: ${response.status}`,
-        JSON.stringify(response, null, 2)
-      )
-    }
-  } catch (error) {
-    console.error('ONVIF Media Server Error:', error)
-    showTestModal(
-      'ONVIF Media Server',
-      false,
-      `Error: ${error.message || 'Failed to connect to media server'}`,
       error.stack || JSON.stringify(error, null, 2)
     )
   } finally {

@@ -35,7 +35,7 @@ const navItems = [
   { label: 'Data Browser', icon: 'pi pi-database', to: '/data-browser' },
   { label: 'Ingest Logs', icon: 'pi pi-chevron-circle-down', to: '/ingest-logs' },
   { label: 'Settings', icon: 'pi pi-cog', to: '/settings' },
-  { label: 'Integrations', icon: 'pi pi-bolt', to: '/integrations' },
+  { label: 'Extensions', icon: 'pi pi-bolt', to: '/extensions' },
   { label: 'Diagnostics', icon: 'pi pi-wave-pulse', to: '/diagnostics' },
   { label: 'About', icon: 'pi pi-info-circle', to: '/about' },
 
